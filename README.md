@@ -100,4 +100,4 @@ Other input parameters have the same meaning as in the
 This file has the same data map of input lightcurves (**lcs**), but without exposure time.
 
 # More
-Read ***doc.pdf*** for more details.
+This readme file is pretty much a copy of ***doc.pdf***. Read it for more details.
