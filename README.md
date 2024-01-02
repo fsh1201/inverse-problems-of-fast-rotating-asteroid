@@ -98,3 +98,6 @@ Other input parameters have the same meaning as in the
 
 ## out_lcs
 This file has the same data map of input lightcurves (**lcs**), but without exposure time.
+
+# More
+Read ***doc.pdf*** for more details.
