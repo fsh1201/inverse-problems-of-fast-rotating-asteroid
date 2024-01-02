@@ -1,3 +1,6 @@
+# Cite
+
+
 # make
     $ make  
 g++, gcc, and gfortran are required
@@ -100,4 +103,5 @@ Other input parameters have the same meaning as in the
 This file has the same data map of input lightcurves (**lcs**), but without exposure time.
 
 # More
-This readme file is pretty much a copy of ***doc.pdf***. Read it for more details.
+This readme file is pretty much a copy of ***doc.pdf*** written by Josef Durech and Mikko Kaasalainen. Read it for more details.  
+Also see DAMIT website: https://astro.troja.mff.cuni.cz/projects/damit/
