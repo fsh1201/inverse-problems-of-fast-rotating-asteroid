@@ -1,4 +1,15 @@
-# Cite
+# Description
+The program (written in Fortran by Mikko Kaasalainen and converted to C by Josef Ďurech)
+computes the shape+spin+scattering model that gives the best fit to the input lightcurves
+(calibrated, uncalibrated, or sparse). Scattering law+shape representation are simple and
+robustly converging. The shape representation this procedure obtains is the Gaussian image
+of a convex polyhedron, i.e., the areas of the facets (with fixed outward normals). The vertices
+are directly solved by the Minkowski procedure minkowski.
+
+This program is a **modified version** that takes the **exposure time** into account for those **high 
+exposure-period-ratio** situations.
+
+# Cite this work
 
 
 # make
@@ -65,7 +76,8 @@ smallest difference in rms deviation between two subsequent steps – when the s
 smaller difference, the iteration loop is stopped.
 
 ## out_periods
-From the 1st column to 7th column: it's $P$ (h), $\lambda$ (deg), $\beta$ (deg), RMS residual, residual, iteration times, dark area %
+From the 1st column to 7th column: it's $P$ (h), $\lambda$ (deg), $\beta$ (deg), RMS residual, 
+residual, iteration times, dark area %
 
 ## out_areas
 The first line gives the number of facets, then follow facet areas and outward unit normal
@@ -82,8 +94,8 @@ $λ$ $β$ $P$
 $t_0$ $φ_0$  
 $a$ $d$ $k$  
 $c$  
-If some of the parameters are fixed (t0 and φ0 are always fixed), they have the same values
-as in the input par file.
+If some of the parameters are fixed ($t_0$ and $φ_0$ are always fixed), they have the same values
+as in the **input_par** file.
 
 ## input_par
 **Initial spin** – asteroid’s initial ecliptic pole coordinates $λ, β$ (deg), and the rotation period $P$
@@ -103,5 +115,5 @@ Other input parameters have the same meaning as in the
 This file has the same data map of input lightcurves (**lcs**), but without exposure time.
 
 # More
-This readme file is pretty much a copy of ***doc.pdf*** written by Josef Durech and Mikko Kaasalainen. Read it for more details.  
-Also see DAMIT website: https://astro.troja.mff.cuni.cz/projects/damit/
+This readme file is pretty much a copy of ***doc.pdf***. Read it for more details. 
+Also see [DAMIT website](https://astro.troja.mff.cuni.cz/projects/damit/)
