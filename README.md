@@ -120,6 +120,11 @@ An [example](https://github.com/fsh1201/inverse-problems-of-fast-rotating-astero
 ## out_lcs
 This file has the same data map of input lightcurves (**lcs**), but without exposure time.
 
+## a test
+    $ ./spin_axis ./lc.txt ./input_period_scan ./out_periods
+    $ cat ./lc.txt | ./convexinv -s -o ./out_areas.txt -p ./out_par.txt ./input_convexinv ./out_lcs.txt
+    $ cat ./out_areas.txt | ./minkowski | ./standardtri | ./shape2obj > ./model.obj
+
 # More
 This README is pretty much a copy of [doc.pdf](https://github.com/fsh1201/inverse-problems-of-fast-rotating-asteroid/blob/main/doc.pdf). Read it for more details. 
 Also see [DAMIT website](https://astro.troja.mff.cuni.cz/projects/damit/)
