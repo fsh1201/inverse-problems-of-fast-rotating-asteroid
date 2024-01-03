@@ -21,7 +21,7 @@ g++, gcc, and gfortran are required
     $ ./spin_axis lcs input_period_scan out_periods
     
 ## inversion of shapes
-    $ cat lcs | ./convexinv -s -o out_areas -p out_par input_par out_lcs
+    $ cat lcs | ./convexinv -s -o out_areas -p out_par input_convexinv out_lcs
     $ cat out_areas | ./minkowski | ./standardtri | ./shape2obj > model.obj
     
 ## input lightcurves (lcs)
@@ -41,6 +41,8 @@ the Sun and of the Earth in $AU$, and the exposure time in $day$.
 
 For a slowly moving main belt asteroid, the coordinate vectors can be approximated as
 to be constant for a single-night lightcurve.
+
+An [example file](https://github.com/fsh1201/inverse-problems-of-fast-rotating-asteroid/blob/main/lc.txt)
 
 ## input_period_scan
 **Initial period** - The first line of the input period scan gives the initial period, the final period, and the
@@ -75,6 +77,8 @@ of iteration steps in the Levenberg-Marquardt loop. If it is lower than one, the
 smallest difference in rms deviation between two subsequent steps – when the steps have
 smaller difference, the iteration loop is stopped.
 
+An [example](https://github.com/fsh1201/inverse-problems-of-fast-rotating-asteroid/blob/main/input_period_scan)
+
 ## out_periods
 From the 1st column to 7th column: it's $P$ (h), $\lambda$ (deg), $\beta$ (deg), RMS residual, 
 residual, iteration times, dark area %
@@ -95,9 +99,9 @@ $t_0$ $φ_0$
 $a$ $d$ $k$  
 $c$  
 If some of the parameters are fixed ($t_0$ and $φ_0$ are always fixed), they have the same values
-as in the **input_par** file.
+as in the **input_convexinv** file.
 
-## input_par
+## input_convexinv
 **Initial spin** – asteroid’s initial ecliptic pole coordinates $λ, β$ (deg), and the rotation period $P$
 (hours). The initial values are followed by 0 or 1 depending on whether those are fixed (0) or
 free (1). The initial value could be taken from the best result of spin state inversion.
@@ -111,9 +115,11 @@ basic choice is $t_0 = 0$ and $φ_0 = 0$.
 Other input parameters have the same meaning as in the
 **input_period_scan** file.
 
+An [example](https://github.com/fsh1201/inverse-problems-of-fast-rotating-asteroid/blob/main/input_convexinv)
+
 ## out_lcs
 This file has the same data map of input lightcurves (**lcs**), but without exposure time.
 
 # More
-This readme file is pretty much a copy of ***doc.pdf***. Read it for more details. 
+This README is pretty much a copy of [doc.pdf](https://github.com/fsh1201/inverse-problems-of-fast-rotating-asteroid/blob/main/doc.pdf). Read it for more details. 
 Also see [DAMIT website](https://astro.troja.mff.cuni.cz/projects/damit/)
