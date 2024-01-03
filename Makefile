@@ -20,8 +20,8 @@ convexinv: convexinv.c $(MY_LIBS)
 period_scan: period_scan.c $(MY_LIBS)
 	$(CC) $(CFLAGS) -o $@ $< $(MY_LIBS) $(LDFLAGS) -g
 
-spin_axis: spin_axis.cpp
-	g++ spin_axis.cpp -o spin_axis
+spin_axis: spin_axis.c
+	$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $<
