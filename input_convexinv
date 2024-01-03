@@ -1,6 +1,6 @@
-17	0	inital lambda [deg] (0/1 - fixed/free) 
-11		0	initial beta [deg] (0/1 - fixed/free)
-5.2702553		0	inital period [hours] (0/1 - fixed/free)
+143	0	inital lambda [deg] (0/1 - fixed/free) 
+71		0	initial beta [deg] (0/1 - fixed/free)
+0.2952		0	inital period [hours] (0/1 - fixed/free)
 0			zero time [JD]
 0			initial rotation angle [deg]     
 0.1			convexity regularization      
