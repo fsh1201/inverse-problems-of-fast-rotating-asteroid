@@ -12,19 +12,19 @@ exposure-period-ratio** situations.
 # Cite this work
 
 
-# make
+# Compile
     $ make  
 g++, gcc, and gfortran are required
 
-# usage
-## inversion of spin state
+# Usage
+## Inversion of spin state
     $ ./spin_axis lcs input_period_scan out_periods
     
-## inversion of shapes
+## Inversion of shapes
     $ cat lcs | ./convexinv -s -o out_areas -p out_par input_convexinv out_lcs
     $ cat out_areas | ./minkowski | ./standardtri | ./shape2obj > model.obj
     
-## input lightcurves (lcs)
+## Input lightcurves (lcs)
 The input file contains lightcurve data and the corresponding geometry, it is read from the
 standard input. 
 
