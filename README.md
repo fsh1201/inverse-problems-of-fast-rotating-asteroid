@@ -10,6 +10,7 @@ This program is a **modified version** that takes the **exposure time** into acc
 exposure-period-ratio** situations.
 
 # Cite this work
+Feng, S., Hu, S., Chen, X., et al. 2024, MNRAS, 528, 3523. doi:10.1093/mnras/stae250
     @ARTICLE{2024MNRAS.528.3523F,
            author = {{Feng}, Shuai and {Hu}, Shaoming and {Chen}, Xu and {Li}, Yang and {Du}, Junju and {Yang}, Zhitao and {Cao}, Hai and {Gan}, Qingbo and {Liu}, Shuqi and {Jiang}, Yuchen},
             title = "{Spin state and convex shape inversion from light curves of fast-rotating asteroids}",
